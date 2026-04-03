@@ -1,0 +1,79 @@
+img{
+    width: 250px; 
+}
+
+.WeatherScreen{
+    height: 100%; 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: space-evenly;
+}
+
+.WeatherScreen .main-info{
+    display: flex; 
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.WeatherScreen .temp{
+    font-size: 5.5rem;
+}
+
+.WeatherScreen .info{
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    border-bottom: 1px solid #333; 
+    padding: 15px 0; 
+}
+
+.WeatherScreen .info #day{
+    font-size: 1.4rem; 
+}
+
+.WeatherScreen .info #time{
+    font-size: 1.2rem; 
+    color: #ccc; 
+}
+
+.WeatherScreen .sub-info{
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.WeatherScreen .sub-info .weather-description, 
+.WeatherScreen .sub-info .weather-main{
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.sub-info .weather-description .icon-section, 
+.sub-info .weather-main .icon-main{
+    font-size: 1.3rem; 
+}
+
+.sub-info .weather-description .weather, 
+.sub-info .weather-main .main-info{
+    font-size: 1.2rem; 
+    font-weight: bold;
+}
+
+.city-img{
+    width: 100%; 
+    height: 90px; 
+    padding: 10px 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 1.7rem;
+    color: #fff; 
+    border-radius: 10px; 
+    background-image: url("https://picsum.photos/1600/900"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+

@@ -1,0 +1,112 @@
+.Right{
+    padding: 10px 20px;
+    height: 100%; 
+}
+
+.header{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.header .logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+
+    /* 핵심: 깊이 있는 그라데이션 */
+    background: linear-gradient(135deg, #5f9cff, #7b5cff, #00d4ff);
+
+    /* 글래스 느낌 */
+    backdrop-filter: blur(10px);
+
+    /* 레이어 그림자 */
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 0.4),
+        inset 0 -2px 6px rgba(0, 0, 0, 0.2);
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* ✨ 빛 반사 (이게 핵심 포인트) */
+.header .logo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0.1) 40%,
+        transparent 60%
+    );
+
+    transform: translateX(-100%);
+    transition: 0.6s;
+}
+
+/* hover 시 빛 지나감 */
+.header .logo:hover::before {
+    transform: translateX(100%);
+}
+
+/* 🌫️ 내부 흐름 (공기 느낌) */
+.header .logo::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+
+    background: radial-gradient(
+        circle at 30% 30%,
+        rgba(255, 255, 255, 0.4),
+        transparent 60%
+    );
+
+    top: -10%;
+    left: -10%;
+    filter: blur(8px);
+}
+
+.data-sort{
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+}
+
+.data-sort .today,
+.data-sort .week{
+    color: #999; 
+    transition: 0.3s ease-in;
+    cursor: pointer;  
+}
+
+.data-sort .today.clicked, 
+.data-sort .week.clicked{
+    color: #000; 
+    border-bottom: 1px solid #333; 
+}
+
+.data-sort .today h2,
+.data-sort .week h2{
+    font-size: 2rem; 
+}
+
+.web-title{
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.web-title h1{
+    font-size: 2.5rem; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+
+
+
+
+

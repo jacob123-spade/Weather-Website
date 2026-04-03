@@ -1,0 +1,26 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px; 
+}
+
+body{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    background-color: #333;
+}
+
+#root{
+   width: 70%; 
+   height: 80%; 
+   background-color: #ccc;
+   border-radius: 20px; 
+   overflow: hidden; 
+   box-shadow: 5px 8px 10px rgba(255,255,255,0.2); 
+}

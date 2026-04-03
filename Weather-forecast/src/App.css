@@ -1,0 +1,28 @@
+.App{
+    display: flex; 
+    align-items: center; 
+    height: 100%; 
+}
+
+.App .left-section{
+    flex: 3; 
+    height: 100%;  
+}
+
+.App .right-section{
+    flex: 7; 
+    height: 100%;  
+}
+
+@media (max-width: 1024px) {
+    .App .left-section{
+        /* width: 100%; */
+        display: none; 
+    }
+
+    .App .right-section{
+        /* display: none;  */
+        width: 100%; 
+    }
+    
+}

@@ -1,0 +1,13 @@
+.Week{
+    padding: 20px 15px;
+}
+
+.Week .weekly{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+
+
+
