@@ -12,7 +12,7 @@ const SearchBar = ()=>{
     }
 
     const onSearchCity = ()=>{
-        if(city.trim===""){
+        if(city.trim()===""){
             idRef.current.focus(); 
             return; 
         }

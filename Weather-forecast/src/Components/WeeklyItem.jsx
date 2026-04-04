@@ -13,7 +13,7 @@ const WeeklyItem = ({date, weather, maxTemp, minTemp})=>{
                 {today}
             </div>
             <div className="weather-container">
-                <i className={getWeatherIconMain(`${weather}`)}></i>
+                <i className={getWeatherIconMain(weather)}></i>
             </div>
             <div className="day-temp">
                 {`${Math.round(maxTemp)}°/${Math.round(minTemp)}°`}

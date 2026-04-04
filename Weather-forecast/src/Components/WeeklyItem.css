@@ -6,6 +6,7 @@
     flex-direction: column; 
     align-items: center;
     gap: 4px; 
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3); 
 }
 
 .WeeklyItem .day{
@@ -19,7 +20,7 @@
 
 .WeeklyItem .weather-container i{
     font-size: 2.5rem; 
-    color: #3333; 
+    color: #2D3748; 
 }
 
 .WeeklyItem .day-temp{
